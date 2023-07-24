@@ -1,0 +1,25 @@
+@use "../sass-utils/index" as *;
+@use "../components/mixins";
+.main__card{
+    margin: 10px 30px;
+    flex-direction: column;
+    text-align: center;
+
+    h3{
+        font-size: 20px;
+        color: $bigheading;
+        text-transform: uppercase;
+    };
+
+    p{
+        margin-top: -10px;
+        margin-bottom: 20px;
+        color: $subfont;
+        font-size: 10px;
+        text-indent: 10px;
+        word-spacing: 2px;
+    }
+    button{
+        @include mixins.homeBtn();
+    }
+}

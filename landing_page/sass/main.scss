@@ -1,0 +1,18 @@
+
+//varialbles & fonts
+@use "./sass-utils/index" as *;
+
+//global or all
+
+@use "./base/reset";
+
+//navigation
+
+@use "./layout/navigation";
+
+
+//pages--->home;
+
+@use "./pages/home"
+
+

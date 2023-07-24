@@ -1,0 +1,10 @@
+@use "../sass-utils/index" as *;
+body{
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+    background-color: $bgcolor;
+    font-family: $font_poppins;
+    color:$font_color ;
+}
+

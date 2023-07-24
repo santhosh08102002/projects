@@ -1,0 +1,10 @@
+@use "../sass-utils/index" as *;
+@mixin homeBtn(){
+    width: fit-content;
+    background-color: $bigheading;
+    color: $fontcolor;
+    text-transform: capitalize;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+}

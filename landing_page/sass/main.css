@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+body {
+  margin: 0px;
+  padding: opx;
+  box-sizing: border-box;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 30px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  background-color: #ff2f75;
+}
+.header__logo {
+  margin-top: 10px;
+}
+.header__links {
+  display: flex;
+}
+.header__links > li, .header a {
+  padding-right: 10px;
+  list-style: none;
+  text-transform: capitalize;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.main__card {
+  margin: 10px 30px;
+  flex-direction: column;
+  text-align: center;
+}
+.main__card h3 {
+  font-size: 20px;
+  color: #ff2f75;
+  text-transform: uppercase;
+}
+.main__card p {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  color: #cecece;
+  font-size: 10px;
+  text-indent: 10px;
+  word-spacing: 2px;
+}
+.main__card button {
+  width: fit-content;
+  background-color: #ff2f75;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

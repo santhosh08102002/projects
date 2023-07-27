@@ -1,4 +1,10 @@
 @use "../sass-utils/index" as *;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
 body{
     margin: 0px;
     padding: opx;
@@ -6,5 +12,7 @@ body{
     background-color: $bgcolor;
     font-family: $font_poppins;
     color:$font_color ;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 

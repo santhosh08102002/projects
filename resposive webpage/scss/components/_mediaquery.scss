@@ -1,0 +1,9 @@
+@mixin mediaquery($Bp){
+    @if $Bp == xsm{
+        @media only screen and (max-width : 576px){
+            @content;
+        }
+       
+    }
+
+}

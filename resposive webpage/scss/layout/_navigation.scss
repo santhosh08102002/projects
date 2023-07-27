@@ -1,0 +1,73 @@
+@use "../abstract/variable&fonts" as *;
+@use "../components/mediaquery" as mediaQuery;
+.header{
+    background-color:$green;
+    transition: all 2s;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 0px 5px black;
+    @include mediaQuery.mediaquery(xsm){
+        justify-content: space-around;
+    }
+    
+    &--logo{
+        margin: 10px 20px;
+        text-transform: capitalize;
+        font-size: 2rem;
+        @include mediaQuery.mediaquery(xsm){
+            font-size: 20px;
+    
+        }
+    }
+    &--navbar{
+        display: flex;
+        justify-content: space-between;
+
+        @include mediaQuery.mediaquery(xsm){
+        display: none;
+        position: absolute;
+       padding: 20px;
+       border-radius: 8px;
+        background-color: greenyellow;
+        margin-top: 20px;
+        left: 50%;
+        top: 500%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+        margin-top: 20px;
+        font-size: 2px;
+        }
+    }
+    &--navbar li{
+        list-style-type: none;
+        margin: 0px 5px;
+        @include mediaQuery.mediaquery(xsm){
+            margin: 5px;
+        }
+    }
+    &--navbar li  a{
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 8px;
+        padding: 5px 10px;
+        @include mediaQuery.mediaquery(xsm){
+            font-size: 13px;
+            }
+    }
+    &--navbar li  a:hover{
+        background-color: black;
+        color: $white;
+    }
+    &--menubar{
+        display: none;
+        @include mediaQuery.mediaquery(xsm){
+            display: block;
+            font-size: 20px;
+            margin: 10px 0px 10px 40px;
+            }
+    }
+} 

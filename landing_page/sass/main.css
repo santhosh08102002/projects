@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   margin: 0px;
   padding: opx;
@@ -6,41 +11,135 @@ body {
   background-color: black;
   font-family: "Poppins", sans-serif;
   color: white;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: 20px 30px;
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
-  background-color: #ff2f75;
+  background-color: #5596f8;
 }
 .header__logo {
   margin-top: 10px;
 }
+.header__logo p {
+  margin-top: -2px;
+  font-size: 10px;
+}
 .header__links {
   display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
 }
 .header__links > li, .header a {
   padding-right: 10px;
+  transition: 60ms;
   list-style: none;
   text-transform: capitalize;
   color: white;
   text-decoration: none;
   font-size: 16px;
 }
+.header__links > li > a:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
 
+.footerpage {
+  margin: 10px 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #2d2dff;
+}
+.footerpage--contactus--add {
+  margin: auto 10px;
+  padding: 10px;
+  align-items: center;
+}
+.footerpage--contactus--add h4 {
+  font-size: 25px;
+  text-decoration: underline;
+}
+.footerpage--contactus--add p {
+  font-size: 20px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.footerpage--contactus--links {
+  margin: auto 10px;
+}
+.footerpage--contactus--links p {
+  font-size: 25px;
+}
+.footerpage--contactus--links i {
+  margin: 10px auto;
+}
+.footerpage--contactus--review form {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  font-size: 20px;
+}
+.footerpage--contactus--review form input {
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.footerpage--contactus--review form textarea {
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+.footerpage--contactus--review form button {
+  width: fit-content;
+  background-color: #5596f8;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+@keyframes welcomeanime {
+  0% {
+    color: rgb(0, 153, 255);
+  }
+  100% {
+    color: rgb(64, 7, 235);
+  }
+}
+@keyframes particals {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .main__card {
   margin: 10px 30px;
-  flex-direction: column;
   text-align: center;
 }
 .main__card h3 {
-  font-size: 20px;
-  color: #ff2f75;
+  margin: 20px;
+  font-size: 30px;
+  color: #5596f8;
   text-transform: uppercase;
+}
+.main__card .welcomeanime {
+  animation: welcomeanime 10s infinite;
 }
 .main__card p {
   margin-top: -10px;
@@ -52,7 +151,164 @@ body {
 }
 .main__card button {
   width: fit-content;
-  background-color: #ff2f75;
+  background-color: #5596f8;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.banner1 {
+  margin: 30px 30px;
+  padding: 20px 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.banner1 img {
+  margin: 0 -290px;
+  mix-blend-mode: multiply;
+}
+.banner1 h4 {
+  color: rgba(33, 52, 92, 0.8117647059);
+  font-size: 30px;
+}
+.banner1 h4 span {
+  font-size: 50px;
+  color: #5596f8;
+}
+
+.treandings {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.treandings__contentbg {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px gray;
+  transition: 4s;
+}
+.treandings__contentbg h5 {
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 0.9;
+  font-size: 15px;
+}
+.treandings__contentbg p {
+  margin-top: 10px;
+  color: gray;
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 13px;
+}
+.treandings img {
+  object-fit: cover;
+  margin: 0 auto;
+  max-width: 200px;
+  max-height: 200px;
+  mix-blend-mode: multiply;
+}
+
+.categories__section {
+  background-color: whitesmoke;
+  border-radius: 8px;
+  margin: 30px 30px;
+  padding: 10px 0;
+}
+.categories__section .categories h4 {
+  margin: 20px auto;
+  padding: 5px 10px;
+  border-radius: 8px;
+  max-width: fit-content;
+  color: rgb(30, 0, 255);
+  background-color: white;
+}
+.categories__section .categories__line {
+  margin: 10px auto;
+  background: linear-gradient(to right, rgb(232, 85, 85), rgb(73, 73, 244));
+  width: 200px;
+  height: 7px;
+  border-radius: 8px;
+}
+.categories__section .categories .particals {
+  position: relative;
+}
+.categories__section .categories .particals__circle1 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  left: 10%;
+  font-size: 10px;
+}
+.categories__section .categories .particals__circle2 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  font-size: 10px;
+}
+.categories__section .categories .particals__square1 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  right: 80%;
+  bottom: 40%;
+  font-size: 10px;
+}
+.categories__section .categories .particals__square2 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  right: 30%;
+  top: 60%;
+  font-size: 10px;
+}
+.categories__section .categories .particals__diamond1 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  left: 80%;
+  top: 100%;
+  font-size: 10px;
+}
+.categories__section .categories .particals__diamond2 {
+  animation: particals linear 10s infinite;
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  font-size: 10px;
+}
+.categories__section .categories__products {
+  margin: 50px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.categories__section .categories__products__list {
+  text-align: center;
+}
+.categories__section .categories__products__list img {
+  max-width: 200px;
+  max-height: 200px;
+  mix-blend-mode: multiply;
+}
+.categories__section .categories__products__list p {
+  margin: 10px 0;
+  color: black;
+  text-transform: capitalize;
+}
+.categories__section .categories__products__list p span {
+  color: #5596f8;
+  font-weight: 600;
+}
+.categories__section .categories__products__list button {
+  width: fit-content;
+  background-color: #5596f8;
   color: white;
   text-transform: capitalize;
   padding: 5px 10px;

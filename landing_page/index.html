@@ -3,26 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sass practice</title>
+    <title>www.shopify.com</title>
+
+    <!-- icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
+    <!-- navigation and header -->
     <header class="header">
-      <div class="header__logo"><a href="/index.html">shopify👌</a></div>
+      <div class="header__logo">
+        <a href="/index.html" style="display: block">shopify👌</a>
+        <p>men's preminum choice</p>
+      </div>
       <div class="header__nav">
         <nav>
           <ul class="header__links">
-            <li><a href="/index.html">home</a></li>
-            <li><a href="/index.html">about</a></li>
-            <li><a href="">cantact us</a></li>
+            <li><a href="./index.html">home</a></li>
+            <li><a href="#">products</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact us</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
+    <!-- navigation end -->
+    <!-- welcome card start -->
     <main>
       <div class="main__card">
-        <h3>welcome</h3>
+        <h3 class="welcomeanime">welcome</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus fuga
           repellat nam. Soluta, velit maiores! Dolores quisquam, perspiciatis
@@ -30,12 +47,160 @@
         </p>
         <button>click</button>
       </div>
-
+      <!-- welcome card end -->
+      <!--  offers ad -->
       <div class="banner1">
-        <img src="/image/" alt="" />
+        <img src="./image/img1.jpg" width="200px" alt="banner" />
+        <img src="./image/shirt1.jpg" width="150px" alt="" />
+        <h4><span>💰50%</span> offers on <br />cool tshirts</h4>
+        <img src="./image/img1.jpg" width="200px" alt="banner" />
+        <img src="./image/shirt1.jpg" width="150px" alt="" />
+      </div>
+      <!--  offers ad end -->
+    </main>
+    <!-- treanding shirt  -->
+    <main class="treandings">
+      <div>
+        <a href="./index.html">
+          <div class="treandings__contentbg">
+            <img src="./image/shirt1.jpg" alt="" />
+            <h5>Treandy T-shirt</h5>
+            <p>up-to 20% offer</p>
+          </div></a
+        >
+      </div>
+
+      <div>
+        <a href="./index.html">
+          <div class="treandings__contentbg">
+            <img src="./image/shirt2.jpg" alt="" />
+            <h5>Treandy T-shirt</h5>
+            <p>up-to 20% offer</p>
+          </div></a
+        >
+      </div>
+      <div>
+        <a href="./index.html">
+          <div class="treandings__contentbg">
+            <img src="./image/shirt3.jpg" alt="" />
+            <h5>Treandy Casual shirt</h5>
+            <p>up-to 20% offer</p>
+          </div></a
+        >
+      </div>
+      <div>
+        <a href="./index.html">
+          <div class="treandings__contentbg">
+            <img src="./image/tshirt2.jpg" alt="" />
+            <h5>Treandy Casual shirt</h5>
+            <p>up-to 20% offer</p>
+          </div></a
+        >
+      </div>
+      <div>
+        <a href="./index.html">
+          <div class="treandings__contentbg">
+            <img src="./image/tshirt1.jpg" alt="" />
+            <h5>Treandy Casual shirt</h5>
+            <p>up-to 20% offer</p>
+          </div></a
+        >
       </div>
     </main>
+    <!-- treanding shirt end -->
+
+    <section class="categories__section">
+      <div class="categories">
+        <h4>Top category</h4>
+        <div class="categories__line"></div>
+        <div class="particals">
+          <div class="particals__circle1">💗</div>
+          <div class="particals__circle2">💗</div>
+          <div class="particals__square1">🟥</div>
+          <div class="particals__square2">🟥</div>
+          <div class="particals__diamond1">🔷</div>
+          <div class="particals__diamond2">🔷</div>
+        </div>
+        <div class="categories__products">
+          <div class="categories__products__list">
+            <img src="./image/tshirt3.jpg" alt="" />
+            <p>shirts offer upto <span>20%</span></p>
+            <button type="button">View</button>
+          </div>
+
+          <div class="categories__products__list">
+            <img src="./image/shirt1.jpg" alt="" />
+            <p>shirts offer upto <span>20%</span></p>
+            <button type="button">View</button>
+          </div>
+
+          <div class="categories__products__list">
+            <img src="./image/tshirt1.jpg" alt="" />
+            <p>shirts offer upto <span>20%</span></p>
+            <button type="button">View</button>
+          </div>
+          <div class="categories__products__list">
+            <img src="./image/shirt3.jpg" alt="" />
+            <p>shirts offer upto <span>20%</span></p>
+            <button type="button">View</button>
+          </div>
+          <div class="categories__products__list">
+            <img src="./image/tshirt2.jpg" alt="" />
+            <p>shirts offer upto <span>20%</span></p>
+            <button type="button">View</button>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="/javascript/xo.js"></script>
   </body>
+
+  <footer>
+    <div class="footerpage">
+      <div class="footerpage--contactus--add">
+        <h4>Address</h4>
+
+        <p><i class="fa-solid fa-location-dot"></i>No:16,street,chennai00000</p>
+        <p><i class="fa-solid fa-phone"></i>+91 1234567890</p>
+        <p><i class="fa-solid fa-envelope"></i>Email: dgkiuygbviu@gmail.com</p>
+      </div>
+      <div class="footerpage--contactus--links">
+        <p>Available connections:</p>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="footerpage--contactus--review">
+        <form action="" method="">
+          <input
+            type="text"
+            name="name"
+            id="fullnmae"
+            required
+            placeholder="your name"
+          />
+          <input type="email" required name="email" placeholder="email" />
+          <input
+            type="number"
+            name="phnum"
+            placeholder="phone number"
+            maxlength="10"
+          />
+          <textarea
+            name="message"
+            id="review-message"
+            cols="30"
+            rows="10"
+            style="resize: none"
+            required
+            placeholder="enter your message"
+          ></textarea>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+    </div>
+  </footer>
 </html>

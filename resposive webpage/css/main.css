@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@300;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: rgb(175, 253, 85);
+  transition: all 2s;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 0px 5px black;
+}
+@media only screen and (max-width: 576px) {
+  .header {
+    justify-content: space-around;
+  }
+}
+.header--logo {
+  margin: 10px 20px;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+@media only screen and (max-width: 576px) {
+  .header--logo {
+    font-size: 20px;
+  }
+}
+.header--navbar {
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 576px) {
+  .header--navbar {
+    display: none;
+    position: absolute;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: greenyellow;
+    margin-top: 20px;
+    left: 50%;
+    top: 500%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 2px;
+  }
+}
+.header--navbar li {
+  list-style-type: none;
+  margin: 0px 5px;
+}
+@media only screen and (max-width: 576px) {
+  .header--navbar li {
+    margin: 5px;
+  }
+}
+.header--navbar li a {
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+@media only screen and (max-width: 576px) {
+  .header--navbar li a {
+    font-size: 13px;
+  }
+}
+.header--navbar li a:hover {
+  background-color: black;
+  color: white;
+}
+.header--menubar {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .header--menubar {
+    display: block;
+    font-size: 20px;
+    margin: 10px 0px 10px 40px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

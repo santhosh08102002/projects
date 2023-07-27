@@ -1,0 +1,16 @@
+@keyframes welcomeanime {
+    0%{
+        color: rgb(0, 153, 255);
+    }
+    100%{
+        color: rgb(64, 7, 235);
+    }
+}
+@keyframes particals {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

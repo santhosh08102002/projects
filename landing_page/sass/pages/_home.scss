@@ -1,15 +1,24 @@
 @use "../sass-utils/index" as *;
 @use "../components/mixins";
+
+
+// welcome card
 .main__card{
     margin: 10px 30px;
-    flex-direction: column;
     text-align: center;
 
+
     h3{
-        font-size: 20px;
+        margin: 20px;
+        font-size: 30px;
         color: $bigheading;
         text-transform: uppercase;
+
+
     };
+    .welcomeanime{
+        animation: welcomeanime 10s infinite;
+    }
 
     p{
         margin-top: -10px;
@@ -18,8 +27,177 @@
         font-size: 10px;
         text-indent: 10px;
         word-spacing: 2px;
+
     }
     button{
+
+        
         @include mixins.homeBtn();
+    }
+}
+// offer banner
+.banner1{
+    margin: 30px 30px;
+    padding: 20px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color:white;
+
+
+    & img{
+        margin:0 -290px;
+        mix-blend-mode: multiply;
+
+    }
+    & h4{
+        color:$nrmlheading;
+        font-size: 30px;
+        span{
+            font-size: 50px;
+            color: $bigheading;
+        }
+    }
+    
+
+}
+// treandings
+.treandings{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    &__contentbg{
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 5px 5px 5px gray;
+        transition: 4s;
+
+        & h5{
+            margin-top: 10px;
+            color: black;
+            text-align: center;
+            text-transform: capitalize;
+            opacity: 0.9;
+            font-size: 15px;
+        }
+        & p{
+            margin-top: 10px;
+            color: gray;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 13px;
+        }
+
+    }
+    & img{
+        object-fit: cover;
+        margin: 0 auto;
+        max-width: 200px;
+        max-height: 200px;
+        mix-blend-mode: multiply;  
+    }
+    
+    }
+
+.categories__section{
+    background-color: whitesmoke;
+    border-radius: 8px;
+    margin: 30px 30px;
+    padding: 10px 0;
+    .categories{
+    
+        h4{
+            margin: 20px auto;
+            padding: 5px 10px;
+            border-radius: 8px;
+            max-width: fit-content;
+            color: $strongcolor;
+            background-color: white;
+        }
+    
+        &__line{
+            margin: 10px auto;
+            background: linear-gradient(to right,rgb(232, 85, 85),rgb(73, 73, 244));
+            width: 200px;
+            height: 7px;
+            border-radius: 8px;
+        }
+        .particals{
+            position: relative;
+            &__circle1{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                left: 10%;
+            font-size: 10px;
+            }
+            &__circle2{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                right: 10%;
+                top: 40%;
+            font-size: 10px;
+            }
+            &__square1{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                right: 80%;
+                bottom: 40%;
+            font-size: 10px;
+            }
+            &__square2{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                right: 30%;
+                top: 60%;
+            font-size: 10px;
+            }
+
+            &__diamond1{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                left: 80%;
+                top: 100%;
+            font-size: 10px;
+            }
+            &__diamond2{
+                animation: particals linear 10s infinite;
+                position: absolute;
+                left: 40%;
+                top: 10%;
+            font-size: 10px;
+            }
+
+        }
+        &__products{
+            margin: 50px 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__products__list{
+            text-align: center;
+            img{
+                max-width: 200px;
+                max-height: 200px;
+                mix-blend-mode: multiply;
+            }
+            p{
+                margin: 10px 0;
+                color: black;
+                text-transform: capitalize;
+                span{
+                    color:$bigheading;
+                    font-weight: 600;
+                }
+            }
+            button{
+                 @include mixins.homeBtn(); 
+            }
+        }
     }
 }

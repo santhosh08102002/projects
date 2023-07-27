@@ -6,12 +6,14 @@
 
 @use "./base/reset";
 
-//navigation
-
+//layout
 @use "./layout/navigation";
+@use "./layout/footer";
 
+//components
+@use "./components/animations";
 
-//pages--->home;
+//pages;
 
 @use "./pages/home"
 

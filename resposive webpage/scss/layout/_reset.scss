@@ -1,0 +1,8 @@
+@use "../abstract/variable&fonts" as *;
+*{
+    margin: 0px;
+    padding: 0px;;
+}
+body{
+    font-family: $poppins;
+}

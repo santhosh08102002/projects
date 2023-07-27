@@ -1,25 +1,47 @@
 @use "../sass-utils/index" as *;
+
 .header{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
     margin: 20px 30px;
     padding: 10px 20px;
     border-radius: 10px;
     color: $fontcolor;
     background-color: $bigheading;
+  
     &__logo{
         margin-top: 10px;
+    
+    
     }
+    &__logo p{
+        margin-top: -2px;
+        font-size: 10px;
+    
+
+    }
+ 
     &__links{
         display: flex;
+        justify-content: space-around;
+        margin-right: 30px;
 
     }
     &__links >li,a{
         padding-right: 10px;
+        transition: 60ms;
         list-style: none;
         text-transform: capitalize;
         color: $fontcolor;
         text-decoration: none;
         font-size: 16px;
+        
+    }
+    &__links >li>a:hover{
+        color: black;
+        background-color: rgb(255, 255, 255,0.9);
+        padding: 5px 10px;
+        border-radius: 8px;
     }
 }

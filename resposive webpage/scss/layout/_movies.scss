@@ -1,0 +1,76 @@
+@use "../abstract/variable&fonts" as *;
+@use "../components/mediaquery" as mediaQuery;
+@use "../components/mixins";
+
+.movies{
+    &--container--title a{
+       @include mixins.headinglinks()
+    }
+   
+      
+    &--container{
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        margin: 20px auto;
+    }
+    &--container--lists{
+        text-align: center;
+        padding: 10px;
+        background-color: $white;
+        margin: 20px 5px;
+        border-radius: 8px;
+        height: fit-content;
+        width: fit-content;
+
+    }
+    &--container--lists:hover{
+        & h4{
+            display: block;
+        }
+        & p{
+            display: block;
+        }
+
+    }
+   
+    &--container--lists img{
+        width: 600px;
+        height: fit-content;
+        @include mediaQuery.mediaquery(xsm){
+            width: 200px;
+              }
+    }
+
+    &--container--lists a{
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    &--container--lists h4{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: black;
+        margin-top: 5px;
+        display: none;
+        @include mediaQuery.mediaquery(xsm){
+           display: block;
+           font-size: 12px;
+              }
+        
+    }
+    &--container--lists p{
+      display: none;
+      @include mediaQuery.mediaquery(xsm){
+        display: block;
+           }
+        
+    }
+    
+    &--container--lists button{
+        @include mixins.movie-view-btn()
+    }
+
+}

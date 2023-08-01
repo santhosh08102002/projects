@@ -1,0 +1,15 @@
+@use "../abstract/variable&fonts" as *;
+@use "../components/mediaquery" as mediaQuery;
+
+@mixin containers(){
+padding-bottom: 10px;
+border-radius: 8px;
+margin: 0 10px; 
+text-align: center;
+background-color: $white;
+margin-bottom: 20px;
+@include mediaQuery.mediaquery(xsm){
+ margin: 0 5px;           
+}
+
+}

@@ -1,0 +1,49 @@
+@use "../abstract/variable&fonts" as *;
+@use "../components/moviescontainer";
+@use "../components/mixins";
+@use "../components/mediaquery" as mediaQuery;
+.treanding{
+    margin-top: 20px;
+    &--head a{
+        @include mixins.headinglinks()
+        
+       
+    }
+    &--movies{
+        margin: 20px 0px;
+        display: flex;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        @include mediaQuery.mediaquery(xsm){
+         margin: 10px;
+         overflow-x: scroll;
+        }
+       
+       
+
+        &--containers{
+          @include moviescontainer.containers();
+        }
+        &--containers a{
+            text-decoration: none;
+        }
+        &--containers img{
+            max-width: 200px;
+            @include mediaQuery.mediaquery(xsm){
+                max-width: 100px
+            }
+        }
+        &--containers button{
+         @include mixins.movie-view-btn();
+        
+        }
+
+        &--containers h4{
+            font-size: 20px;
+            color: $favblack;
+            @include mediaQuery.mediaquery(xsm){
+               font-size: 10px;
+            }
+        }
+    }
+}

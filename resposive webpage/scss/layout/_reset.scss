@@ -1,8 +1,13 @@
 @use "../abstract/variable&fonts" as *;
 *{
     margin: 0px;
-    padding: 0px;;
+    padding: 0px;
 }
 body{
     font-family: $poppins;
+    background-color: $favblack;
+    overscroll-behavior: smooth;
+    overflow:scroll;
+    overflow-x: visible;
+   
 }

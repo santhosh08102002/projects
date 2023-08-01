@@ -1,34 +1,44 @@
 @use "../abstract/variable&fonts" as *;
 @use "../components/mediaquery" as mediaQuery;
 .header{
+    z-index: 1;
     background-color:$green;
-    transition: all 2s;
     display: flex;
     position: relative;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 2px 0px 5px black;
     @include mediaQuery.mediaquery(xsm){
         justify-content: space-around;
+        align-items:center ;
+        z-index: 1;
     }
-    
+    @include mediaQuery.mediaquery(md){
+        
+       }
+
+    .material-symbols-outlined{
+        cursor: pointer;
+    }
     &--logo{
         margin: 10px 20px;
         text-transform: capitalize;
         font-size: 2rem;
         @include mediaQuery.mediaquery(xsm){
-            font-size: 20px;
-    
+            font-size: 15px;
         }
+     
     }
     &--navbar{
         display: flex;
         justify-content: space-between;
+        align-items:center ;
 
         @include mediaQuery.mediaquery(xsm){
         display: none;
         position: absolute;
        padding: 20px;
+       align-items:center ;
        border-radius: 8px;
         background-color: greenyellow;
         margin-top: 20px;
@@ -43,8 +53,10 @@
     &--navbar li{
         list-style-type: none;
         margin: 0px 5px;
+        align-items:center ;
         @include mediaQuery.mediaquery(xsm){
             margin: 5px;
+           
         }
     }
     &--navbar li  a{
@@ -56,6 +68,9 @@
         padding: 5px 10px;
         @include mediaQuery.mediaquery(xsm){
             font-size: 13px;
+            text-align: center;
+            z-index: 1;
+            align-items: center;
             }
     }
     &--navbar li  a:hover{
@@ -64,10 +79,51 @@
     }
     &--menubar{
         display: none;
+
         @include mediaQuery.mediaquery(xsm){
             display: block;
             font-size: 20px;
+            z-index: 10;
             margin: 10px 0px 10px 40px;
             }
     }
 } 
+section{
+    & #searchbox{
+        display: none;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px 10px;
+        @include mediaQuery.mediaquery(xsm){
+            margin: 10px 5px;
+        }
+        & input{
+            width: 300px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 20px;
+            border: none;
+            background-color: $green;
+            @include mediaQuery.mediaquery(xsm){
+                width: 150px;
+                padding: 2px 4px;
+                font-size: 10px;
+            }
+        }
+        & button{
+            border: none;
+            background-color: $green;
+            border-radius: 30%;
+            margin-left: 5px;
+            padding: 2px;
+    }
+    & button >span{
+        font-size: 25px;
+        @include mediaQuery.mediaquery(xsm){
+          font-size: 15px;
+        
+        }
+    }
+        
+    }
+}

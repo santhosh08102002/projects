@@ -6,21 +6,30 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgba(28, 39, 28, 0.7607843137);
+  overscroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: visible;
 }
 
 .header {
+  z-index: 1;
   background-color: rgb(175, 253, 85);
-  transition: all 2s;
   display: flex;
   position: relative;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   box-shadow: 2px 0px 5px black;
 }
 @media only screen and (max-width: 576px) {
   .header {
     justify-content: space-around;
+    align-items: center;
+    z-index: 1;
   }
+}
+.header .material-symbols-outlined {
+  cursor: pointer;
 }
 .header--logo {
   margin: 10px 20px;
@@ -29,18 +38,20 @@ body {
 }
 @media only screen and (max-width: 576px) {
   .header--logo {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 .header--navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 @media only screen and (max-width: 576px) {
   .header--navbar {
     display: none;
     position: absolute;
     padding: 20px;
+    align-items: center;
     border-radius: 8px;
     background-color: greenyellow;
     margin-top: 20px;
@@ -55,6 +66,7 @@ body {
 .header--navbar li {
   list-style-type: none;
   margin: 0px 5px;
+  align-items: center;
 }
 @media only screen and (max-width: 576px) {
   .header--navbar li {
@@ -72,6 +84,9 @@ body {
 @media only screen and (max-width: 576px) {
   .header--navbar li a {
     font-size: 13px;
+    text-align: center;
+    z-index: 1;
+    align-items: center;
   }
 }
 .header--navbar li a:hover {
@@ -85,8 +100,241 @@ body {
   .header--menubar {
     display: block;
     font-size: 20px;
+    z-index: 10;
     margin: 10px 0px 10px 40px;
   }
+}
+
+section #searchbox {
+  display: none;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 20px 10px;
+}
+@media only screen and (max-width: 576px) {
+  section #searchbox {
+    margin: 10px 5px;
+  }
+}
+section #searchbox input {
+  width: 300px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(175, 253, 85);
+}
+@media only screen and (max-width: 576px) {
+  section #searchbox input {
+    width: 150px;
+    padding: 2px 4px;
+    font-size: 10px;
+  }
+}
+section #searchbox button {
+  border: none;
+  background-color: rgb(175, 253, 85);
+  border-radius: 30%;
+  margin-left: 5px;
+  padding: 2px;
+}
+section #searchbox button > span {
+  font-size: 25px;
+}
+@media only screen and (max-width: 576px) {
+  section #searchbox button > span {
+    font-size: 15px;
+  }
+}
+
+.treanding {
+  margin-top: 20px;
+}
+.treanding--head a {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(175, 253, 85);
+  opacity: 0.8;
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 3px;
+}
+@media only screen and (max-width: 576px) {
+  .treanding--head a {
+    font-size: 10px;
+  }
+}
+.treanding--movies {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
+@media only screen and (max-width: 576px) {
+  .treanding--movies {
+    margin: 10px;
+    overflow-x: scroll;
+  }
+}
+.treanding--movies--containers {
+  padding-bottom: 10px;
+  border-radius: 8px;
+  margin: 0 10px;
+  text-align: center;
+  background-color: white;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 576px) {
+  .treanding--movies--containers {
+    margin: 0 5px;
+  }
+}
+.treanding--movies--containers a {
+  text-decoration: none;
+}
+.treanding--movies--containers img {
+  max-width: 200px;
+}
+@media only screen and (max-width: 576px) {
+  .treanding--movies--containers img {
+    max-width: 100px;
+  }
+}
+.treanding--movies--containers button {
+  padding: 5px 10px;
+  background-color: rgb(175, 253, 85);
+  color: black;
+  text-transform: capitalize;
+  border: none;
+  transition: ease 200ms;
+  border-radius: 8px;
+}
+.treanding--movies--containers button:hover {
+  outline: 2px solid rgba(28, 39, 28, 0.7607843137);
+  opacity: 0.8;
+  outline-offset: 2px;
+}
+@media only screen and (max-width: 576px) {
+  .treanding--movies--containers button {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+}
+.treanding--movies--containers h4 {
+  font-size: 20px;
+  color: rgba(28, 39, 28, 0.7607843137);
+}
+@media only screen and (max-width: 576px) {
+  .treanding--movies--containers h4 {
+    font-size: 10px;
+  }
+}
+
+.movies--container--title a {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  border-bottom: 2px white solid;
+  border-top: 2px white solid;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(175, 253, 85);
+  opacity: 0.8;
+  text-shadow: rgba(255, 255, 255, 0.2) 1px 1px 3px;
+}
+@media only screen and (max-width: 576px) {
+  .movies--container--title a {
+    font-size: 10px;
+  }
+}
+.movies--container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  margin: 20px auto;
+}
+.movies--container--lists {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  margin: 20px 5px;
+  border-radius: 8px;
+  height: fit-content;
+  width: fit-content;
+}
+.movies--container--lists:hover h4 {
+  display: block;
+}
+.movies--container--lists:hover p {
+  display: block;
+}
+.movies--container--lists img {
+  width: 600px;
+  height: fit-content;
+}
+@media only screen and (max-width: 576px) {
+  .movies--container--lists img {
+    width: 200px;
+  }
+}
+.movies--container--lists a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+.movies--container--lists h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: black;
+  margin-top: 5px;
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .movies--container--lists h4 {
+    display: block;
+    font-size: 12px;
+  }
+}
+.movies--container--lists p {
+  display: none;
+}
+@media only screen and (max-width: 576px) {
+  .movies--container--lists p {
+    display: block;
+  }
+}
+.movies--container--lists button {
+  padding: 5px 10px;
+  background-color: rgb(175, 253, 85);
+  color: black;
+  text-transform: capitalize;
+  border: none;
+  transition: ease 200ms;
+  border-radius: 8px;
+}
+.movies--container--lists button:hover {
+  outline: 2px solid rgba(28, 39, 28, 0.7607843137);
+  opacity: 0.8;
+  outline-offset: 2px;
+}
+@media only screen and (max-width: 576px) {
+  .movies--container--lists button {
+    font-size: 10px;
+    padding: 2px 5px;
+  }
+}
+
+.copyright {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=main.css.map */

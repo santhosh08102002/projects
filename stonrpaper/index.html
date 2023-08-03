@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>games.san</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Select & Click Enter</h1>
+    <div class="container">
+      <div class="person">
+        <h1 id="personchoice"></h1>
+      </div>
+
+      <div class="computer"><h1 id="computerchoice"></h1></div>
+    </div>
+    <form action="" name="radioform">
+      <div class="parentradio" id="parentradio">
+        <input type="radio" name="game" value="paper" id="paper" /><label
+          for="paper"
+          ><i class="fa-regular fa-paper-plane"></i
+        ></label>
+        <input type="radio" name="game" value="stone" id="stone" /><label
+          for="stone"
+          ><i class="fa-solid fa-bomb"></i
+        ></label>
+        <input type="radio" name="game" value="sessor" id="sessor" /><label
+          for="sessor"
+          ><i class="fa-solid fa-scissors"></i
+        ></label>
+      </div>
+    </form>
+    <h1 id="replace"></h1>
+
+    <script src="./javascript.js"></script>
+  </body>
+</html>

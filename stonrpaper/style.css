@@ -1,0 +1,46 @@
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.container{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+}
+.person{
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
+.person h1{
+    margin:0 auto;
+    margin-top: 35%;
+}
+.computer{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px black;
+    border-radius: 20px;
+}
+.computer h1{
+    margin:0 auto;
+    margin-top: 35%;
+}
+
+form{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.parentradio label{
+font-size: 40px; 
+}
+h1{
+    text-align: center;
+    color: black;
+}

@@ -1,0 +1,54 @@
+@use "../abstract/variables" as *;
+
+.login{
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color:$pink;
+    width: fit-content;
+    position: relative;
+    display: none;
+
+    & h4{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $white;
+        text-shadow: $gray 1px 1px 2px;
+    }
+
+    &--body--input input{
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+    }
+    &--body--input  span{
+        position: absolute;
+        margin-top: 5px;
+        left: 180px;
+        font-size: 20px;
+        color: black;
+    }
+    &--body #loginbtn{
+        margin-top: -10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        text-transform: capitalize;
+        background-color: $white;
+        color: $black;
+    }
+    &--body #loginbtn:hover{
+        outline: 2px $white solid;
+        background-color: $pink;
+        color: $white;
+    }
+    a{
+        margin-top: 40px;
+        padding-top: 20px;
+        color: $white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+
+
+}

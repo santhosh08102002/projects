@@ -1,0 +1,56 @@
+@use "../abstract/variables" as *;
+
+.createacc{
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 8px;
+    background-color:$pink;
+    width: fit-content;
+    position: relative;
+    display: block;
+    & h4{
+        font-size: 20px;
+        text-transform: capitalize;
+        color: $white;
+        text-shadow: $gray 1px 1px 2px;
+    }
+
+    &--input input{
+        display: flex;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        margin: 3px;
+    }
+    &--input span{
+        position: absolute;
+        margin-top: -26px;
+        left: 180px;
+        font-size: 20px;
+        color: black;
+    }
+    &--body #createbtn{
+        margin-top: -10px;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 5px;
+        text-transform: capitalize;
+        background-color: $white;
+        color: $black;
+    }
+    &--body #createbtn:hover{
+        outline: 2px $white solid;
+        background-color: $pink;
+        color: $white;
+    }
+    &--body p{
+        font-size: 10px;
+        color:$white;
+    }
+    a{
+        margin-top: 40px;
+        color: $white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+}

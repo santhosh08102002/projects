@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@300;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 3px gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #6528F7;
+}
+main .addnew input {
+  font-size: 20px;
+  margin: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+}
+main #listholder {
+  text-align: center;
+}
+main #listholder li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  margin-left: -50px;
+}
+main #listholder li label {
+  font-size: 20px;
+  color: white;
+  text-transform: capitalize;
+}
+main #listholder li button {
+  background-color: #EDE4FF;
+  cursor: pointer;
+  color: #6528F7;
+  border: none;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

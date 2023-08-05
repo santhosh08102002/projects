@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Poppins:wght@300;600&display=swap");
+body {
+  margin: 0px;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #9E9FA5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.createacc {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #F31559;
+  width: fit-content;
+  position: relative;
+  display: block;
+}
+.createacc h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #EEEDED;
+  text-shadow: #9E9FA5 1px 1px 2px;
+}
+.createacc--input input {
+  display: flex;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 3px;
+}
+.createacc--input span {
+  position: absolute;
+  margin-top: -26px;
+  left: 180px;
+  font-size: 20px;
+  color: black;
+}
+.createacc--body #createbtn {
+  margin-top: -10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: #EEEDED;
+  color: #272829;
+}
+.createacc--body #createbtn:hover {
+  outline: 2px #EEEDED solid;
+  background-color: #F31559;
+  color: #EEEDED;
+}
+.createacc--body p {
+  font-size: 10px;
+  color: #EEEDED;
+}
+.createacc a {
+  margin-top: 40px;
+  color: #EEEDED;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.login {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: #F31559;
+  width: fit-content;
+  position: relative;
+  display: none;
+}
+.login h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #EEEDED;
+  text-shadow: #9E9FA5 1px 1px 2px;
+}
+.login--body--input input {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.login--body--input span {
+  position: absolute;
+  margin-top: 5px;
+  left: 180px;
+  font-size: 20px;
+  color: black;
+}
+.login--body #loginbtn {
+  margin-top: -10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: #EEEDED;
+  color: #272829;
+}
+.login--body #loginbtn:hover {
+  outline: 2px #EEEDED solid;
+  background-color: #F31559;
+  color: #EEEDED;
+}
+.login a {
+  margin-top: 40px;
+  padding-top: 20px;
+  color: #EEEDED;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+.tickdiv--green {
+  padding: 30px;
+  display: none;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: greenyellow;
+}
+.tickdiv--green span {
+  font-size: 4rem;
+}
+.tickdiv--green p {
+  margin-top: -5px;
+  font-size: 20px;
+}
+.tickdiv--red {
+  display: none;
+  padding: 30px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
+}
+.tickdiv--red span {
+  font-size: 4rem;
+}
+.tickdiv--red p {
+  margin-top: -5px;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */

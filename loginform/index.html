@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loginform.com</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <main id="createacc">
+      <!-- create account -->
+      <form action="" name="createform">
+        <div class="createacc">
+          <h4>create account</h4>
+          <div class="createacc--body">
+            <div class="createacc--body--names createacc--input">
+              <input
+                type="text"
+                name="firstname"
+                placeholder="Enter your first name"
+                required
+              />
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Enter your last name"
+                required
+              />
+            </div>
+            <div class="createacc--body--emailbox createacc--input">
+              <input
+                type="email"
+                name="email"
+                id="createemail"
+                placeholder="Enter your emil"
+                required
+              />
+            </div>
+            <div class="createacc--body--password createacc--input">
+              <input
+                min="6"
+                maxlength="8"
+                type="password"
+                name="newpassword"
+                id="createnewpass"
+                placeholder="new password"
+                required
+              /><span class="material-symbols-outlined eye"> visibility </span>
+              <input
+                min="6"
+                maxlength="8"
+                type="password"
+                name="conformpassword"
+                id="createconformpass"
+                placeholder="confrom password"
+                required
+              /><span class="material-symbols-outlined eye"> visibility </span>
+            </div>
+            <p id="info"></p>
+            <input type="submit" id="createbtn" value="Submit" />
+          </div>
+          <a href="#logloginform" id="tologin">Already have a account?</a>
+        </div>
+      </form>
+    </main>
+    <!-- create account end -->
+    <!-- login form -->
+    <main id="loginform">
+      <!-- login account -->
+      <form action="" name="loginform">
+        <div class="login">
+          <h4>login</h4>
+          <div class="login--body">
+            <div class="login--body--input">
+              <input
+                type="email"
+                name="loginemail"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <br />
+            <div class="login--body--input">
+              <input
+                min="6"
+                maxlength="8"
+                type="password"
+                name="loginpassword"
+                id="password"
+                placeholder="password"
+                required
+              /><span class="material-symbols-outlined eye"> visibility </span>
+            </div>
+            <p id="info"></p>
+            <input type="submit" id="loginbtn" value="Submit" />
+          </div>
+          <a href="#createacc" id="tocreate">Create new account</a>
+        </div>
+      </form>
+    </main>
+
+    <div class="tickdiv">
+      <div class="tickdiv--green" id="greentick">
+        <span class="material-symbols-outlined"> done </span>
+        <p>Done</p>
+      </div>
+      <div class="tickdiv--red" id="redtick">
+        <span class="material-symbols-outlined"> Close </span>
+        <p>Fail</p>
+      </div>
+    </div>
+
+    <script src="javascript.js"></script>
+  </body>
+</html>

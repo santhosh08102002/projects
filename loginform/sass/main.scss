@@ -1,0 +1,6 @@
+@use "./abstract/variables"as *;
+// layout
+@use "./layout/base.scss";
+@use "./layout/create";
+@use "./layout/login";
+@use "./component/ticks";
